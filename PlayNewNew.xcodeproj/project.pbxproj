@@ -1,0 +1,1346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50201AFB2C70ECCD009E01C7 /* HeartRateMeasurementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFA2C70ECCD009E01C7 /* HeartRateMeasurementService.swift */; };
+		50201AFE2C71A3E5009E01C7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFD2C71A3E5009E01C7 /* DataService.swift */; };
+		50201B002C71BB04009E01C7 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFF2C71BB04009E01C7 /* RecordView.swift */; };
+		5024204B2C8BEFD90019FDA5 /* WorkoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024204A2C8BEFD90019FDA5 /* WorkoutService.swift */; };
+		5045691F2C6FC06700D30BF3 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5045691E2C6FC06700D30BF3 /* start.mp3 */; };
+		504569202C6FC06700D30BF3 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5045691E2C6FC06700D30BF3 /* start.mp3 */; };
+		504AF59A2C7B7AE700717477 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504AF5992C7B7AE700717477 /* RankView.swift */; };
+		507233362CC4043B00ACB955 /* TimeChallengeView_StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507233352CC4043B00ACB955 /* TimeChallengeView_StartView.swift */; };
+		508295C32C95CA6000733D06 /* WatchConnectivityManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508295C22C95CA6000733D06 /* WatchConnectivityManagerService.swift */; };
+		508295C72C95CC6000733D06 /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508295C62C95CC6000733D06 /* ConnectivityManager.swift */; };
+		5083BD4D2C7C5536008D7493 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5083BD4C2C7C5536008D7493 /* SocketService.swift */; };
+		5083BD4F2C7C70DF008D7493 /* JSONService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5083BD4E2C7C70DF008D7493 /* JSONService.swift */; };
+		5083BD522C7DEC4D008D7493 /* NoiseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5083BD512C7DEC4D008D7493 /* NoiseService.swift */; };
+		5083BD552C7F2ADF008D7493 /* RankView_RankList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5083BD542C7F2ADF008D7493 /* RankView_RankList.swift */; };
+		5084C02B2C8F3B54007CBB82 /* FrequencyChallengeView_StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084C02A2C8F3B54007CBB82 /* FrequencyChallengeView_StartView.swift */; };
+		50897C7E2C9F0F330094DA13 /* SettingView_AccelerationThresholdSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50897C7D2C9F0F330094DA13 /* SettingView_AccelerationThresholdSetting.swift */; };
+		5093587A2C95890B005D70D8 /* PlayNewNewOnIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509358792C95890B005D70D8 /* PlayNewNewOnIOSApp.swift */; };
+		5093587C2C95890B005D70D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093587B2C95890B005D70D8 /* ContentView.swift */; };
+		5093587E2C95890D005D70D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5093587D2C95890D005D70D8 /* Assets.xcassets */; };
+		509358812C95890D005D70D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 509358802C95890D005D70D8 /* Preview Assets.xcassets */; };
+		5093588B2C95890D005D70D8 /* PlayNewNewOnIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093588A2C95890D005D70D8 /* PlayNewNewOnIOSTests.swift */; };
+		509358952C95890D005D70D8 /* PlayNewNewOnIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509358942C95890D005D70D8 /* PlayNewNewOnIOSUITests.swift */; };
+		509358972C95890D005D70D8 /* PlayNewNewOnIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509358962C95890D005D70D8 /* PlayNewNewOnIOSUITestsLaunchTests.swift */; };
+		509405BB2C99A7C20000BF76 /* EdgeChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509405BA2C99A7C20000BF76 /* EdgeChallengeView.swift */; };
+		509405BD2C99A99D0000BF76 /* EdgeChallengeView_StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509405BC2C99A99D0000BF76 /* EdgeChallengeView_StartView.swift */; };
+		5098F2B02C7467DF00C94576 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 5098F2AF2C7467DF00C94576 /* SwiftUICharts */; };
+		5098F2B32C74B93B00C94576 /* RecordView_InfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098F2B22C74B93B00C94576 /* RecordView_InfoCard.swift */; };
+		5098F2B52C74C9E000C94576 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098F2B42C74C9E000C94576 /* SettingView.swift */; };
+		50AF8C502C69E038004A421C /* PlayNewNew Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 50AF8C4F2C69E038004A421C /* PlayNewNew Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50AF8C552C69E038004A421C /* PlayNewNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF8C542C69E038004A421C /* PlayNewNewApp.swift */; };
+		50AF8C572C69E038004A421C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF8C562C69E038004A421C /* ContentView.swift */; };
+		50AF8C592C69E038004A421C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50AF8C582C69E038004A421C /* Assets.xcassets */; };
+		50AF8C5C2C69E038004A421C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50AF8C5B2C69E038004A421C /* Preview Assets.xcassets */; };
+		50AF8C662C69E038004A421C /* PlayNewNew_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF8C652C69E038004A421C /* PlayNewNew_Watch_AppTests.swift */; };
+		50AF8C702C69E039004A421C /* PlayNewNew_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF8C6F2C69E039004A421C /* PlayNewNew_Watch_AppUITests.swift */; };
+		50AF8C722C69E039004A421C /* PlayNewNew_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF8C712C69E039004A421C /* PlayNewNew_Watch_AppUITestsLaunchTests.swift */; };
+		50AF8C872C69EA8D004A421C /* naitang.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50AF8C862C69EA8D004A421C /* naitang.ttf */; };
+		50AF8C882C69EA8D004A421C /* naitang.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50AF8C862C69EA8D004A421C /* naitang.ttf */; };
+		50AF8C902C69F3DC004A421C /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF8C8F2C69F3DC004A421C /* PlayView.swift */; };
+		50B4C9D92C9A8754001F7BD0 /* bgm_ya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50B4C9D82C9A8754001F7BD0 /* bgm_ya.mp3 */; };
+		50B4C9DA2C9A8754001F7BD0 /* bgm_ya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50B4C9D82C9A8754001F7BD0 /* bgm_ya.mp3 */; };
+		50B4C9DC2C9A87B6001F7BD0 /* GoodNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B4C9DB2C9A87B6001F7BD0 /* GoodNewsView.swift */; };
+		50D295A72C8E80AF0007CA4F /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D295A62C8E80AF0007CA4F /* ChallengeView.swift */; };
+		50D295AA2C8E82070007CA4F /* FrequencyChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D295A92C8E82070007CA4F /* FrequencyChallengeView.swift */; };
+		50E2F5942C6FBC1C00296991 /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50E2F5932C6FBC1C00296991 /* end.mp3 */; };
+		50E2F5952C6FBC1C00296991 /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50E2F5932C6FBC1C00296991 /* end.mp3 */; };
+		50EBDD2D2C835C0B00AC85AB /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EBDD2C2C835C0B00AC85AB /* GlobalData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		509358872C95890D005D70D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50AF8C432C69E037004A421C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 509358762C95890B005D70D8;
+			remoteInfo = PlayNewNewOnIOS;
+		};
+		509358912C95890D005D70D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50AF8C432C69E037004A421C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 509358762C95890B005D70D8;
+			remoteInfo = PlayNewNewOnIOS;
+		};
+		50AF8C512C69E038004A421C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50AF8C432C69E037004A421C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50AF8C4E2C69E038004A421C;
+			remoteInfo = "PlayNewNew Watch App";
+		};
+		50AF8C622C69E038004A421C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50AF8C432C69E037004A421C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50AF8C4E2C69E038004A421C;
+			remoteInfo = "PlayNewNew Watch App";
+		};
+		50AF8C6C2C69E039004A421C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50AF8C432C69E037004A421C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50AF8C4E2C69E038004A421C;
+			remoteInfo = "PlayNewNew Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50AF8C782C69E039004A421C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				50AF8C502C69E038004A421C /* PlayNewNew Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		50201AFA2C70ECCD009E01C7 /* HeartRateMeasurementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateMeasurementService.swift; sourceTree = "<group>"; };
+		50201AFD2C71A3E5009E01C7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		50201AFF2C71BB04009E01C7 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		5024204A2C8BEFD90019FDA5 /* WorkoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutService.swift; sourceTree = "<group>"; };
+		5045691E2C6FC06700D30BF3 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = start.mp3; sourceTree = "<group>"; };
+		504AF5992C7B7AE700717477 /* RankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
+		507233352CC4043B00ACB955 /* TimeChallengeView_StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeChallengeView_StartView.swift; sourceTree = "<group>"; };
+		508295C12C95C9A600733D06 /* PlayNewNewOnIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlayNewNewOnIOS.entitlements; sourceTree = "<group>"; };
+		508295C22C95CA6000733D06 /* WatchConnectivityManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManagerService.swift; sourceTree = "<group>"; };
+		508295C62C95CC6000733D06 /* ConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
+		5083BD4C2C7C5536008D7493 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		5083BD4E2C7C70DF008D7493 /* JSONService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONService.swift; sourceTree = "<group>"; };
+		5083BD512C7DEC4D008D7493 /* NoiseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseService.swift; sourceTree = "<group>"; };
+		5083BD542C7F2ADF008D7493 /* RankView_RankList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankView_RankList.swift; sourceTree = "<group>"; };
+		5084C02A2C8F3B54007CBB82 /* FrequencyChallengeView_StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyChallengeView_StartView.swift; sourceTree = "<group>"; };
+		50897C7D2C9F0F330094DA13 /* SettingView_AccelerationThresholdSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView_AccelerationThresholdSetting.swift; sourceTree = "<group>"; };
+		509358772C95890B005D70D8 /* PlayNewNewOnIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayNewNewOnIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		509358792C95890B005D70D8 /* PlayNewNewOnIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNewNewOnIOSApp.swift; sourceTree = "<group>"; };
+		5093587B2C95890B005D70D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5093587D2C95890D005D70D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		509358802C95890D005D70D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		509358862C95890D005D70D8 /* PlayNewNewOnIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayNewNewOnIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5093588A2C95890D005D70D8 /* PlayNewNewOnIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNewNewOnIOSTests.swift; sourceTree = "<group>"; };
+		509358902C95890D005D70D8 /* PlayNewNewOnIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayNewNewOnIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		509358942C95890D005D70D8 /* PlayNewNewOnIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNewNewOnIOSUITests.swift; sourceTree = "<group>"; };
+		509358962C95890D005D70D8 /* PlayNewNewOnIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNewNewOnIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		509405BA2C99A7C20000BF76 /* EdgeChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeChallengeView.swift; sourceTree = "<group>"; };
+		509405BC2C99A99D0000BF76 /* EdgeChallengeView_StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeChallengeView_StartView.swift; sourceTree = "<group>"; };
+		5098F2B22C74B93B00C94576 /* RecordView_InfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView_InfoCard.swift; sourceTree = "<group>"; };
+		5098F2B42C74C9E000C94576 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		50AF8C492C69E037004A421C /* PlayNewNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayNewNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AF8C4F2C69E038004A421C /* PlayNewNew Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlayNewNew Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AF8C542C69E038004A421C /* PlayNewNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNewNewApp.swift; sourceTree = "<group>"; };
+		50AF8C562C69E038004A421C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50AF8C582C69E038004A421C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50AF8C5B2C69E038004A421C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50AF8C612C69E038004A421C /* PlayNewNew Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlayNewNew Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AF8C652C69E038004A421C /* PlayNewNew_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNewNew_Watch_AppTests.swift; sourceTree = "<group>"; };
+		50AF8C6B2C69E039004A421C /* PlayNewNew Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlayNewNew Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AF8C6F2C69E039004A421C /* PlayNewNew_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNewNew_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		50AF8C712C69E039004A421C /* PlayNewNew_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNewNew_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50AF8C852C69EA4E004A421C /* PlayNewNew-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PlayNewNew-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50AF8C862C69EA8D004A421C /* naitang.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = naitang.ttf; sourceTree = "<group>"; };
+		50AF8C8F2C69F3DC004A421C /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		50B157392C70AE8500808096 /* PlayNewNew Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PlayNewNew Watch App.entitlements"; sourceTree = "<group>"; };
+		50B4C9D82C9A8754001F7BD0 /* bgm_ya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm_ya.mp3; sourceTree = "<group>"; };
+		50B4C9DB2C9A87B6001F7BD0 /* GoodNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNewsView.swift; sourceTree = "<group>"; };
+		50D295A62C8E80AF0007CA4F /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
+		50D295A92C8E82070007CA4F /* FrequencyChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyChallengeView.swift; sourceTree = "<group>"; };
+		50E2F5932C6FBC1C00296991 /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = end.mp3; path = ../../../../end.mp3; sourceTree = "<group>"; };
+		50EBDD2C2C835C0B00AC85AB /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		509358742C95890B005D70D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		509358832C95890D005D70D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5093588D2C95890D005D70D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AF8C4C2C69E038004A421C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5098F2B02C7467DF00C94576 /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AF8C5E2C69E038004A421C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AF8C682C69E039004A421C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50201AF92C70EC83009E01C7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				50201AFA2C70ECCD009E01C7 /* HeartRateMeasurementService.swift */,
+				50201AFD2C71A3E5009E01C7 /* DataService.swift */,
+				5083BD4C2C7C5536008D7493 /* SocketService.swift */,
+				5083BD4E2C7C70DF008D7493 /* JSONService.swift */,
+				5083BD512C7DEC4D008D7493 /* NoiseService.swift */,
+				50EBDD2C2C835C0B00AC85AB /* GlobalData.swift */,
+				5024204A2C8BEFD90019FDA5 /* WorkoutService.swift */,
+				508295C22C95CA6000733D06 /* WatchConnectivityManagerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		508295C42C95CB9E00733D06 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				508295C62C95CC6000733D06 /* ConnectivityManager.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5083BD532C7F2A82008D7493 /* RankView */ = {
+			isa = PBXGroup;
+			children = (
+				5083BD542C7F2ADF008D7493 /* RankView_RankList.swift */,
+			);
+			path = RankView;
+			sourceTree = "<group>";
+		};
+		50897C7A2C9F0EF20094DA13 /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				50897C7D2C9F0F330094DA13 /* SettingView_AccelerationThresholdSetting.swift */,
+			);
+			path = SettingView;
+			sourceTree = "<group>";
+		};
+		509358782C95890B005D70D8 /* PlayNewNewOnIOS */ = {
+			isa = PBXGroup;
+			children = (
+				508295C42C95CB9E00733D06 /* Modules */,
+				508295C12C95C9A600733D06 /* PlayNewNewOnIOS.entitlements */,
+				509358792C95890B005D70D8 /* PlayNewNewOnIOSApp.swift */,
+				5093587B2C95890B005D70D8 /* ContentView.swift */,
+				5093587D2C95890D005D70D8 /* Assets.xcassets */,
+				5093587F2C95890D005D70D8 /* Preview Content */,
+			);
+			path = PlayNewNewOnIOS;
+			sourceTree = "<group>";
+		};
+		5093587F2C95890D005D70D8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				509358802C95890D005D70D8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		509358892C95890D005D70D8 /* PlayNewNewOnIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5093588A2C95890D005D70D8 /* PlayNewNewOnIOSTests.swift */,
+			);
+			path = PlayNewNewOnIOSTests;
+			sourceTree = "<group>";
+		};
+		509358932C95890D005D70D8 /* PlayNewNewOnIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				509358942C95890D005D70D8 /* PlayNewNewOnIOSUITests.swift */,
+				509358962C95890D005D70D8 /* PlayNewNewOnIOSUITestsLaunchTests.swift */,
+			);
+			path = PlayNewNewOnIOSUITests;
+			sourceTree = "<group>";
+		};
+		5098F2B12C74B92200C94576 /* RecordView */ = {
+			isa = PBXGroup;
+			children = (
+				5098F2B22C74B93B00C94576 /* RecordView_InfoCard.swift */,
+			);
+			path = RecordView;
+			sourceTree = "<group>";
+		};
+		50AF8C422C69E037004A421C = {
+			isa = PBXGroup;
+			children = (
+				50AF8C532C69E038004A421C /* PlayNewNew Watch App */,
+				50AF8C642C69E038004A421C /* PlayNewNew Watch AppTests */,
+				50AF8C6E2C69E039004A421C /* PlayNewNew Watch AppUITests */,
+				509358782C95890B005D70D8 /* PlayNewNewOnIOS */,
+				509358892C95890D005D70D8 /* PlayNewNewOnIOSTests */,
+				509358932C95890D005D70D8 /* PlayNewNewOnIOSUITests */,
+				50AF8C4A2C69E037004A421C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50AF8C4A2C69E037004A421C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50AF8C492C69E037004A421C /* PlayNewNew.app */,
+				50AF8C4F2C69E038004A421C /* PlayNewNew Watch App.app */,
+				50AF8C612C69E038004A421C /* PlayNewNew Watch AppTests.xctest */,
+				50AF8C6B2C69E039004A421C /* PlayNewNew Watch AppUITests.xctest */,
+				509358772C95890B005D70D8 /* PlayNewNewOnIOS.app */,
+				509358862C95890D005D70D8 /* PlayNewNewOnIOSTests.xctest */,
+				509358902C95890D005D70D8 /* PlayNewNewOnIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50AF8C532C69E038004A421C /* PlayNewNew Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				50201AF92C70EC83009E01C7 /* Services */,
+				50B157392C70AE8500808096 /* PlayNewNew Watch App.entitlements */,
+				50E2F58F2C6FB6C200296991 /* Sounds */,
+				50AF8C8E2C69F3C8004A421C /* Views */,
+				50AF8C892C69EBAC004A421C /* Controls */,
+				50AF8C852C69EA4E004A421C /* PlayNewNew-Watch-App-Info.plist */,
+				50AF8C822C69E949004A421C /* Fonts */,
+				50AF8C542C69E038004A421C /* PlayNewNewApp.swift */,
+				50AF8C562C69E038004A421C /* ContentView.swift */,
+				50AF8C582C69E038004A421C /* Assets.xcassets */,
+				50AF8C5A2C69E038004A421C /* Preview Content */,
+			);
+			path = "PlayNewNew Watch App";
+			sourceTree = "<group>";
+		};
+		50AF8C5A2C69E038004A421C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				50AF8C5B2C69E038004A421C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50AF8C642C69E038004A421C /* PlayNewNew Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				50AF8C652C69E038004A421C /* PlayNewNew_Watch_AppTests.swift */,
+			);
+			path = "PlayNewNew Watch AppTests";
+			sourceTree = "<group>";
+		};
+		50AF8C6E2C69E039004A421C /* PlayNewNew Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50AF8C6F2C69E039004A421C /* PlayNewNew_Watch_AppUITests.swift */,
+				50AF8C712C69E039004A421C /* PlayNewNew_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "PlayNewNew Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		50AF8C822C69E949004A421C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				50AF8C862C69EA8D004A421C /* naitang.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		50AF8C892C69EBAC004A421C /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				5083BD532C7F2A82008D7493 /* RankView */,
+				5098F2B12C74B92200C94576 /* RecordView */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		50AF8C8E2C69F3C8004A421C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50897C7A2C9F0EF20094DA13 /* SettingView */,
+				50D295A82C8E81E80007CA4F /* ChallengeViews */,
+				50AF8C8F2C69F3DC004A421C /* PlayView.swift */,
+				50201AFF2C71BB04009E01C7 /* RecordView.swift */,
+				5098F2B42C74C9E000C94576 /* SettingView.swift */,
+				504AF5992C7B7AE700717477 /* RankView.swift */,
+				50D295A62C8E80AF0007CA4F /* ChallengeView.swift */,
+				50B4C9DB2C9A87B6001F7BD0 /* GoodNewsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50D295A82C8E81E80007CA4F /* ChallengeViews */ = {
+			isa = PBXGroup;
+			children = (
+				50D295A92C8E82070007CA4F /* FrequencyChallengeView.swift */,
+				5084C02A2C8F3B54007CBB82 /* FrequencyChallengeView_StartView.swift */,
+				509405BA2C99A7C20000BF76 /* EdgeChallengeView.swift */,
+				509405BC2C99A99D0000BF76 /* EdgeChallengeView_StartView.swift */,
+				507233352CC4043B00ACB955 /* TimeChallengeView_StartView.swift */,
+			);
+			path = ChallengeViews;
+			sourceTree = "<group>";
+		};
+		50E2F58F2C6FB6C200296991 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				50B4C9D82C9A8754001F7BD0 /* bgm_ya.mp3 */,
+				50E2F5932C6FBC1C00296991 /* end.mp3 */,
+				5045691E2C6FC06700D30BF3 /* start.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		509358762C95890B005D70D8 /* PlayNewNewOnIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5093589E2C95890D005D70D8 /* Build configuration list for PBXNativeTarget "PlayNewNewOnIOS" */;
+			buildPhases = (
+				509358732C95890B005D70D8 /* Sources */,
+				509358742C95890B005D70D8 /* Frameworks */,
+				509358752C95890B005D70D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayNewNewOnIOS;
+			productName = PlayNewNewOnIOS;
+			productReference = 509358772C95890B005D70D8 /* PlayNewNewOnIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		509358852C95890D005D70D8 /* PlayNewNewOnIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5093589F2C95890D005D70D8 /* Build configuration list for PBXNativeTarget "PlayNewNewOnIOSTests" */;
+			buildPhases = (
+				509358822C95890D005D70D8 /* Sources */,
+				509358832C95890D005D70D8 /* Frameworks */,
+				509358842C95890D005D70D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				509358882C95890D005D70D8 /* PBXTargetDependency */,
+			);
+			name = PlayNewNewOnIOSTests;
+			productName = PlayNewNewOnIOSTests;
+			productReference = 509358862C95890D005D70D8 /* PlayNewNewOnIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5093588F2C95890D005D70D8 /* PlayNewNewOnIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 509358A02C95890D005D70D8 /* Build configuration list for PBXNativeTarget "PlayNewNewOnIOSUITests" */;
+			buildPhases = (
+				5093588C2C95890D005D70D8 /* Sources */,
+				5093588D2C95890D005D70D8 /* Frameworks */,
+				5093588E2C95890D005D70D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				509358922C95890D005D70D8 /* PBXTargetDependency */,
+			);
+			name = PlayNewNewOnIOSUITests;
+			productName = PlayNewNewOnIOSUITests;
+			productReference = 509358902C95890D005D70D8 /* PlayNewNewOnIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		50AF8C482C69E037004A421C /* PlayNewNew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50AF8C792C69E039004A421C /* Build configuration list for PBXNativeTarget "PlayNewNew" */;
+			buildPhases = (
+				50AF8C472C69E037004A421C /* Resources */,
+				50AF8C782C69E039004A421C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50AF8C522C69E038004A421C /* PBXTargetDependency */,
+			);
+			name = PlayNewNew;
+			productName = PlayNewNew;
+			productReference = 50AF8C492C69E037004A421C /* PlayNewNew.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		50AF8C4E2C69E038004A421C /* PlayNewNew Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50AF8C752C69E039004A421C /* Build configuration list for PBXNativeTarget "PlayNewNew Watch App" */;
+			buildPhases = (
+				50AF8C4B2C69E038004A421C /* Sources */,
+				50AF8C4C2C69E038004A421C /* Frameworks */,
+				50AF8C4D2C69E038004A421C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PlayNewNew Watch App";
+			packageProductDependencies = (
+				5098F2AF2C7467DF00C94576 /* SwiftUICharts */,
+			);
+			productName = "PlayNewNew Watch App";
+			productReference = 50AF8C4F2C69E038004A421C /* PlayNewNew Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50AF8C602C69E038004A421C /* PlayNewNew Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50AF8C7C2C69E039004A421C /* Build configuration list for PBXNativeTarget "PlayNewNew Watch AppTests" */;
+			buildPhases = (
+				50AF8C5D2C69E038004A421C /* Sources */,
+				50AF8C5E2C69E038004A421C /* Frameworks */,
+				50AF8C5F2C69E038004A421C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50AF8C632C69E038004A421C /* PBXTargetDependency */,
+			);
+			name = "PlayNewNew Watch AppTests";
+			productName = "PlayNewNew Watch AppTests";
+			productReference = 50AF8C612C69E038004A421C /* PlayNewNew Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50AF8C6A2C69E039004A421C /* PlayNewNew Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50AF8C7F2C69E039004A421C /* Build configuration list for PBXNativeTarget "PlayNewNew Watch AppUITests" */;
+			buildPhases = (
+				50AF8C672C69E039004A421C /* Sources */,
+				50AF8C682C69E039004A421C /* Frameworks */,
+				50AF8C692C69E039004A421C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50AF8C6D2C69E039004A421C /* PBXTargetDependency */,
+			);
+			name = "PlayNewNew Watch AppUITests";
+			productName = "PlayNewNew Watch AppUITests";
+			productReference = 50AF8C6B2C69E039004A421C /* PlayNewNew Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50AF8C432C69E037004A421C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					509358762C95890B005D70D8 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					509358852C95890D005D70D8 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 509358762C95890B005D70D8;
+					};
+					5093588F2C95890D005D70D8 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 509358762C95890B005D70D8;
+					};
+					50AF8C482C69E037004A421C = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					50AF8C4E2C69E038004A421C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					50AF8C602C69E038004A421C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 50AF8C4E2C69E038004A421C;
+					};
+					50AF8C6A2C69E039004A421C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 50AF8C4E2C69E038004A421C;
+					};
+				};
+			};
+			buildConfigurationList = 50AF8C462C69E037004A421C /* Build configuration list for PBXProject "PlayNewNew" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50AF8C422C69E037004A421C;
+			packageReferences = (
+				50201B012C73B422009E01C7 /* XCRemoteSwiftPackageReference "Charts" */,
+				5098F2AE2C74677200C94576 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
+			productRefGroup = 50AF8C4A2C69E037004A421C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50AF8C482C69E037004A421C /* PlayNewNew */,
+				50AF8C4E2C69E038004A421C /* PlayNewNew Watch App */,
+				50AF8C602C69E038004A421C /* PlayNewNew Watch AppTests */,
+				50AF8C6A2C69E039004A421C /* PlayNewNew Watch AppUITests */,
+				509358762C95890B005D70D8 /* PlayNewNewOnIOS */,
+				509358852C95890D005D70D8 /* PlayNewNewOnIOSTests */,
+				5093588F2C95890D005D70D8 /* PlayNewNewOnIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		509358752C95890B005D70D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509358812C95890D005D70D8 /* Preview Assets.xcassets in Resources */,
+				5093587E2C95890D005D70D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		509358842C95890D005D70D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5093588E2C95890D005D70D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AF8C472C69E037004A421C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E2F5942C6FBC1C00296991 /* end.mp3 in Resources */,
+				5045691F2C6FC06700D30BF3 /* start.mp3 in Resources */,
+				50AF8C872C69EA8D004A421C /* naitang.ttf in Resources */,
+				50B4C9D92C9A8754001F7BD0 /* bgm_ya.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AF8C4D2C69E038004A421C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E2F5952C6FBC1C00296991 /* end.mp3 in Resources */,
+				50AF8C5C2C69E038004A421C /* Preview Assets.xcassets in Resources */,
+				504569202C6FC06700D30BF3 /* start.mp3 in Resources */,
+				50AF8C882C69EA8D004A421C /* naitang.ttf in Resources */,
+				50AF8C592C69E038004A421C /* Assets.xcassets in Resources */,
+				50B4C9DA2C9A8754001F7BD0 /* bgm_ya.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AF8C5F2C69E038004A421C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AF8C692C69E039004A421C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		509358732C95890B005D70D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508295C72C95CC6000733D06 /* ConnectivityManager.swift in Sources */,
+				5093587C2C95890B005D70D8 /* ContentView.swift in Sources */,
+				5093587A2C95890B005D70D8 /* PlayNewNewOnIOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		509358822C95890D005D70D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5093588B2C95890D005D70D8 /* PlayNewNewOnIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5093588C2C95890D005D70D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509358952C95890D005D70D8 /* PlayNewNewOnIOSUITests.swift in Sources */,
+				509358972C95890D005D70D8 /* PlayNewNewOnIOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AF8C4B2C69E038004A421C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5024204B2C8BEFD90019FDA5 /* WorkoutService.swift in Sources */,
+				509405BD2C99A99D0000BF76 /* EdgeChallengeView_StartView.swift in Sources */,
+				508295C32C95CA6000733D06 /* WatchConnectivityManagerService.swift in Sources */,
+				507233362CC4043B00ACB955 /* TimeChallengeView_StartView.swift in Sources */,
+				5083BD522C7DEC4D008D7493 /* NoiseService.swift in Sources */,
+				5083BD4D2C7C5536008D7493 /* SocketService.swift in Sources */,
+				5083BD552C7F2ADF008D7493 /* RankView_RankList.swift in Sources */,
+				50B4C9DC2C9A87B6001F7BD0 /* GoodNewsView.swift in Sources */,
+				509405BB2C99A7C20000BF76 /* EdgeChallengeView.swift in Sources */,
+				50AF8C902C69F3DC004A421C /* PlayView.swift in Sources */,
+				50EBDD2D2C835C0B00AC85AB /* GlobalData.swift in Sources */,
+				504AF59A2C7B7AE700717477 /* RankView.swift in Sources */,
+				50201B002C71BB04009E01C7 /* RecordView.swift in Sources */,
+				50201AFB2C70ECCD009E01C7 /* HeartRateMeasurementService.swift in Sources */,
+				5098F2B32C74B93B00C94576 /* RecordView_InfoCard.swift in Sources */,
+				50897C7E2C9F0F330094DA13 /* SettingView_AccelerationThresholdSetting.swift in Sources */,
+				50AF8C572C69E038004A421C /* ContentView.swift in Sources */,
+				5098F2B52C74C9E000C94576 /* SettingView.swift in Sources */,
+				50D295A72C8E80AF0007CA4F /* ChallengeView.swift in Sources */,
+				50AF8C552C69E038004A421C /* PlayNewNewApp.swift in Sources */,
+				5083BD4F2C7C70DF008D7493 /* JSONService.swift in Sources */,
+				50201AFE2C71A3E5009E01C7 /* DataService.swift in Sources */,
+				50D295AA2C8E82070007CA4F /* FrequencyChallengeView.swift in Sources */,
+				5084C02B2C8F3B54007CBB82 /* FrequencyChallengeView_StartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AF8C5D2C69E038004A421C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AF8C662C69E038004A421C /* PlayNewNew_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AF8C672C69E039004A421C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AF8C722C69E039004A421C /* PlayNewNew_Watch_AppUITestsLaunchTests.swift in Sources */,
+				50AF8C702C69E039004A421C /* PlayNewNew_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		509358882C95890D005D70D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 509358762C95890B005D70D8 /* PlayNewNewOnIOS */;
+			targetProxy = 509358872C95890D005D70D8 /* PBXContainerItemProxy */;
+		};
+		509358922C95890D005D70D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 509358762C95890B005D70D8 /* PlayNewNewOnIOS */;
+			targetProxy = 509358912C95890D005D70D8 /* PBXContainerItemProxy */;
+		};
+		50AF8C522C69E038004A421C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50AF8C4E2C69E038004A421C /* PlayNewNew Watch App */;
+			targetProxy = 50AF8C512C69E038004A421C /* PBXContainerItemProxy */;
+		};
+		50AF8C632C69E038004A421C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50AF8C4E2C69E038004A421C /* PlayNewNew Watch App */;
+			targetProxy = 50AF8C622C69E038004A421C /* PBXContainerItemProxy */;
+		};
+		50AF8C6D2C69E039004A421C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50AF8C4E2C69E038004A421C /* PlayNewNew Watch App */;
+			targetProxy = 50AF8C6C2C69E039004A421C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		509358982C95890D005D70D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PlayNewNewOnIOS/PlayNewNewOnIOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlayNewNewOnIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "牛牛挤奶";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangBeans.PlayNewNewOnIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		509358992C95890D005D70D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PlayNewNewOnIOS/PlayNewNewOnIOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlayNewNewOnIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "牛牛挤奶";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangBeans.PlayNewNewOnIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5093589A2C95890D005D70D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangBeans.PlayNewNewOnIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayNewNewOnIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlayNewNewOnIOS";
+			};
+			name = Debug;
+		};
+		5093589B2C95890D005D70D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangBeans.PlayNewNewOnIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayNewNewOnIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlayNewNewOnIOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5093589C2C95890D005D70D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangBeans.PlayNewNewOnIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlayNewNewOnIOS;
+			};
+			name = Debug;
+		};
+		5093589D2C95890D005D70D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZhangBeans.PlayNewNewOnIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlayNewNewOnIOS;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50AF8C732C69E039004A421C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50AF8C742C69E039004A421C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		50AF8C762C69E039004A421C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PlayNewNew Watch App/PlayNewNew Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 241019;
+				DEVELOPMENT_ASSET_PATHS = "\"PlayNewNew Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PlayNewNew-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "牛牛挤奶";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "用于检测运动时的心率并生成健康报告";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "用于检测运动时的心率并生成健康报告";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.5;
+				PRODUCT_BUNDLE_IDENTIFIER = crs.PlayNewNew.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		50AF8C772C69E039004A421C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PlayNewNew Watch App/PlayNewNew Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 241019;
+				DEVELOPMENT_ASSET_PATHS = "\"PlayNewNew Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PlayNewNew-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "牛牛挤奶";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "用于检测运动时的心率并生成健康报告";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "用于检测运动时的心率并生成健康报告";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.5;
+				PRODUCT_BUNDLE_IDENTIFIER = crs.PlayNewNew.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		50AF8C7A2C69E039004A421C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 241019;
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				INFOPLIST_KEY_CFBundleDisplayName = PlayNewNew;
+				MARKETING_VERSION = 1.3.5;
+				PRODUCT_BUNDLE_IDENTIFIER = crs.PlayNewNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		50AF8C7B2C69E039004A421C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 241019;
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				INFOPLIST_KEY_CFBundleDisplayName = PlayNewNew;
+				MARKETING_VERSION = 1.3.5;
+				PRODUCT_BUNDLE_IDENTIFIER = crs.PlayNewNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50AF8C7D2C69E039004A421C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "crs.PlayNewNew-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayNewNew Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlayNewNew Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		50AF8C7E2C69E039004A421C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "crs.PlayNewNew-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayNewNew Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlayNewNew Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		50AF8C802C69E039004A421C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "crs.PlayNewNew-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "PlayNewNew Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		50AF8C812C69E039004A421C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7PHPV8K99;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "crs.PlayNewNew-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "PlayNewNew Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5093589E2C95890D005D70D8 /* Build configuration list for PBXNativeTarget "PlayNewNewOnIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509358982C95890D005D70D8 /* Debug */,
+				509358992C95890D005D70D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5093589F2C95890D005D70D8 /* Build configuration list for PBXNativeTarget "PlayNewNewOnIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5093589A2C95890D005D70D8 /* Debug */,
+				5093589B2C95890D005D70D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		509358A02C95890D005D70D8 /* Build configuration list for PBXNativeTarget "PlayNewNewOnIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5093589C2C95890D005D70D8 /* Debug */,
+				5093589D2C95890D005D70D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50AF8C462C69E037004A421C /* Build configuration list for PBXProject "PlayNewNew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AF8C732C69E039004A421C /* Debug */,
+				50AF8C742C69E039004A421C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50AF8C752C69E039004A421C /* Build configuration list for PBXNativeTarget "PlayNewNew Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AF8C762C69E039004A421C /* Debug */,
+				50AF8C772C69E039004A421C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50AF8C792C69E039004A421C /* Build configuration list for PBXNativeTarget "PlayNewNew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AF8C7A2C69E039004A421C /* Debug */,
+				50AF8C7B2C69E039004A421C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50AF8C7C2C69E039004A421C /* Build configuration list for PBXNativeTarget "PlayNewNew Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AF8C7D2C69E039004A421C /* Debug */,
+				50AF8C7E2C69E039004A421C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50AF8C7F2C69E039004A421C /* Build configuration list for PBXNativeTarget "PlayNewNew Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AF8C802C69E039004A421C /* Debug */,
+				50AF8C812C69E039004A421C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50201B012C73B422009E01C7 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		5098F2AE2C74677200C94576 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5098F2AF2C7467DF00C94576 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5098F2AE2C74677200C94576 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 50AF8C432C69E037004A421C /* Project object */;
+}
