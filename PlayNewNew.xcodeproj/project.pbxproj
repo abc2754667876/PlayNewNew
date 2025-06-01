@@ -88,6 +88,7 @@
 		50B4C9DB2C9A87B6001F7BD0 /* GoodNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNewsView.swift; sourceTree = "<group>"; };
 		50D295A62C8E80AF0007CA4F /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
 		50D295A92C8E82070007CA4F /* FrequencyChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyChallengeView.swift; sourceTree = "<group>"; };
+		B8128A712DECC1E000A45E4C /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		B870817A2DECC0A900E25656 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		B870817B2DECC0A900E25656 /* image-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-1.png"; sourceTree = "<group>"; };
 		B870817C2DECC0A900E25656 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 		50AF8C422C69E037004A421C = {
 			isa = PBXGroup;
 			children = (
+				B8128A712DECC1E000A45E4C /* LICENSE.txt */,
 				B870817A2DECC0A900E25656 /* image.png */,
 				B870817B2DECC0A900E25656 /* image-1.png */,
 				B870817C2DECC0A900E25656 /* README.md */,
