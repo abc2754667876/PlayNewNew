@@ -42,8 +42,6 @@ struct PlayView: View {
     @AppStorage("accelerationThreshold") private var accelerationThreshold = 0.5
     @AppStorage("timeThreshold") private var timeThreshold = 0.34
     
-    @StateObject private var socketClient = SocketClient()
-    
     @StateObject private var workoutManager = WorkoutManager()
     
     @State private var isAnimating = false
@@ -121,12 +119,6 @@ struct PlayView: View {
                             playSound_end()
                         }
                         
-                        if isOpen == true{
-                            let json_PlayLog = JSON_PlayLog(userName: userName, time: formatDateAndTime(date: Date()), spend: elapsedTime, count: shakeCount, frequency: Double(shakeCount) / Double(elapsedTime), heartRate: Double(heartRateSum) / Double(heartRateCount), command: "PlayLog")
-                            let sendString = encodeToJSON(object: json_PlayLog)
-                            socketClient.sendMessage(sendString ?? "nil")
-                        }
-                        
                     } else {
                         startShaking()
                         workoutManager.startWorkout()
@@ -144,9 +136,6 @@ struct PlayView: View {
             .onAppear {
                 prepareSound_end()
                 prepareSound_start()
-            }
-            .onDisappear(){
-                socketClient.stopConnection()
             }
             .blur(radius: vsBlur)
             .opacity(vsOpacity)

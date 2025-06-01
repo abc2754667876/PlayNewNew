@@ -46,17 +46,6 @@ struct ContentView: View {
                             }
                             .padding(.leading)
                         }
-                        
-                        if GlobalData.shared.accessRank{
-                            NavigationLink(destination: RankView()){
-                                HStack{
-                                    Text("🤯 挤奶排行")
-                                        .font(.custom("zixiaohunnaitangti_T", size:14))
-                                    Spacer()
-                                }
-                                .padding(.leading)
-                            }
-                        }
    
                         NavigationLink(destination: SettingView()){
                             HStack{
