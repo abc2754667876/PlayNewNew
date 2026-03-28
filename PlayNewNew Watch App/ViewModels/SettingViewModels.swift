@@ -31,7 +31,6 @@ final class AccelerationThresholdSettingViewModel: ObservableObject {
     @Published var z = 0.0
 
     private let motionManager = CMMotionManager()
-    private let workoutManager = WorkoutManager()
     private var lastShakeTime: Date?
 
     private static func readAccelerationThreshold() -> Double {
@@ -59,12 +58,10 @@ final class AccelerationThresholdSettingViewModel: ObservableObject {
 
     func onDisappear() {
         stopMotion()
-        workoutManager.endWorkout()
     }
 
     private func startMotion() {
         isStart = true
-        workoutManager.startWorkout()
         motionManager.startDeviceMotionUpdates(to: OperationQueue.main) { [weak self] motion, _ in
             guard let self, let motion else { return }
             let acceleration = motion.userAcceleration
@@ -92,7 +89,6 @@ final class AccelerationThresholdSettingViewModel: ObservableObject {
 
     private func stopMotion() {
         isStart = false
-        workoutManager.endWorkout()
         shakeCount = 0
         motionManager.stopDeviceMotionUpdates()
     }

@@ -87,7 +87,6 @@ final class TimeChallengeSessionViewModel: ObservableObject {
     @Published var isShaking = true
 
     private let motionManager = CMMotionManager()
-    private let workoutManager = WorkoutManager()
     private var timer: Timer?
     private var startTime: Date?
     private var lastShakeTime: Date?
@@ -103,7 +102,6 @@ final class TimeChallengeSessionViewModel: ObservableObject {
 
     func stopChallenge() {
         isShaking = false
-        workoutManager.endWorkout()
         timer?.invalidate()
         timer = nil
         motionManager.stopDeviceMotionUpdates()
@@ -115,7 +113,6 @@ final class TimeChallengeSessionViewModel: ObservableObject {
     }
 
     private func startShaking() {
-        workoutManager.startWorkout()
         startTime = Date()
 
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
@@ -187,7 +184,6 @@ final class FrequencyChallengeSessionViewModel: ObservableObject {
     @Published var isShaking = true
 
     private let motionManager = CMMotionManager()
-    private let workoutManager = WorkoutManager()
     private var timer: Timer?
     private var startTime: Date?
     private var lastShakeTime: Date?
@@ -219,7 +215,6 @@ final class FrequencyChallengeSessionViewModel: ObservableObject {
     }
 
     private func startShaking() {
-        workoutManager.startWorkout()
         startTime = Date()
 
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
@@ -256,7 +251,6 @@ final class FrequencyChallengeSessionViewModel: ObservableObject {
     private func stopShaking() {
         stopVibration()
         isShaking = false
-        workoutManager.endWorkout()
         timer?.invalidate()
         timer = nil
         motionManager.stopDeviceMotionUpdates()
@@ -330,7 +324,6 @@ final class EdgeChallengeSessionViewModel: ObservableObject {
     private var lastShakeCount = 0
     private var noMilkingTime = 0
     private var audioPlayerEnd: AVAudioPlayer?
-    private let workoutManager = WorkoutManager()
 
     var completedRoundsText: Int {
         max(0, rounds - 1)
@@ -348,7 +341,6 @@ final class EdgeChallengeSessionViewModel: ObservableObject {
         countdown = 10
         statusText = "现在是：挤奶时间"
         lastShakeCount = shakeCount
-        workoutManager.startWorkout()
 
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             guard let self else { return }
@@ -380,7 +372,6 @@ final class EdgeChallengeSessionViewModel: ObservableObject {
         timer?.invalidate()
         timer = nil
         milkingCompleted = true
-        workoutManager.endWorkout()
     }
 
     private func monitorMilkingActivity() {

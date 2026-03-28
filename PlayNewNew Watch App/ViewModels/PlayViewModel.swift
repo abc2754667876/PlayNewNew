@@ -22,7 +22,6 @@ final class PlayViewModel: ObservableObject {
     @Published var heartRateCount = 0
 
     let heartRateMeasurementService = HeartRateMeasurementService()
-    private let workoutManager = WorkoutManager()
     private let motionManager = CMMotionManager()
 
     private var timer: Timer?
@@ -65,11 +64,9 @@ final class PlayViewModel: ObservableObject {
             showSummary = true
             vsBlur = 8
             vsOpacity = 0.9
-            workoutManager.endWorkout()
             if Self.readSoundOpen() { playSoundEnd() }
         } else {
             startShaking()
-            workoutManager.startWorkout()
         }
     }
 
