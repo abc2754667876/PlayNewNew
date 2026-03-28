@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1F2E3D02EC0100100000001 /* PlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000001 /* PlayViewModel.swift */; };
+		A1F2E3D02EC0100100000002 /* RecordReportViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000002 /* RecordReportViewModels.swift */; };
+		A1F2E3D02EC0100100000003 /* GoodNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000003 /* GoodNewsViewModel.swift */; };
+		A1F2E3D02EC0100100000004 /* ChallengeViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000004 /* ChallengeViewModels.swift */; };
+		A1F2E3D02EC0100100000005 /* SettingViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000005 /* SettingViewModels.swift */; };
 		50201AFB2C70ECCD009E01C7 /* HeartRateMeasurementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFA2C70ECCD009E01C7 /* HeartRateMeasurementService.swift */; };
 		50201AFE2C71A3E5009E01C7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFD2C71A3E5009E01C7 /* DataService.swift */; };
 		50201B002C71BB04009E01C7 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFF2C71BB04009E01C7 /* RecordView.swift */; };
@@ -61,6 +66,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A1F2E3D12EC0100100000001 /* PlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewModel.swift; sourceTree = "<group>"; };
+		A1F2E3D12EC0100100000002 /* RecordReportViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordReportViewModels.swift; sourceTree = "<group>"; };
+		A1F2E3D12EC0100100000003 /* GoodNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNewsViewModel.swift; sourceTree = "<group>"; };
+		A1F2E3D12EC0100100000004 /* ChallengeViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModels.swift; sourceTree = "<group>"; };
+		A1F2E3D12EC0100100000005 /* SettingViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModels.swift; sourceTree = "<group>"; };
 		50201AFA2C70ECCD009E01C7 /* HeartRateMeasurementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateMeasurementService.swift; sourceTree = "<group>"; };
 		50201AFD2C71A3E5009E01C7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		50201AFF2C71BB04009E01C7 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -153,9 +163,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A1F2E3D22EC0100100000000 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2E3D12EC0100100000001 /* PlayViewModel.swift */,
+				A1F2E3D12EC0100100000002 /* RecordReportViewModels.swift */,
+				A1F2E3D12EC0100100000003 /* GoodNewsViewModel.swift */,
+				A1F2E3D12EC0100100000004 /* ChallengeViewModels.swift */,
+				A1F2E3D12EC0100100000005 /* SettingViewModels.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		50AF8C532C69E038004A421C /* PlayNewNew Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				A1F2E3D22EC0100100000000 /* ViewModels */,
 				50201AF92C70EC83009E01C7 /* Services */,
 				50B157392C70AE8500808096 /* PlayNewNew Watch App.entitlements */,
 				50E2F58F2C6FB6C200296991 /* Sounds */,
@@ -339,6 +362,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F2E3D02EC0100100000001 /* PlayViewModel.swift in Sources */,
+				A1F2E3D02EC0100100000002 /* RecordReportViewModels.swift in Sources */,
+				A1F2E3D02EC0100100000003 /* GoodNewsViewModel.swift in Sources */,
+				A1F2E3D02EC0100100000004 /* ChallengeViewModels.swift in Sources */,
+				A1F2E3D02EC0100100000005 /* SettingViewModels.swift in Sources */,
 				5024204B2C8BEFD90019FDA5 /* WorkoutService.swift in Sources */,
 				509405BD2C99A99D0000BF76 /* EdgeChallengeView_StartView.swift in Sources */,
 				507233362CC4043B00ACB955 /* TimeChallengeView_StartView.swift in Sources */,
