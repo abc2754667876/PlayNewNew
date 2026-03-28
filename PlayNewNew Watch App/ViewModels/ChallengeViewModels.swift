@@ -4,7 +4,6 @@
 //
 
 import SwiftUI
-import CoreMotion
 import AVFoundation
 import WatchKit
 
@@ -86,14 +85,12 @@ final class TimeChallengeSessionViewModel: ObservableObject {
     @Published var shakeCount = 0
     @Published var isShaking = true
 
-    private let motionManager = CMMotionManager()
+    private let shakeDetectionService = ShakeDetectionService()
     private var timer: Timer?
     private var startTime: Date?
-    private var lastShakeTime: Date?
     private var audioPlayerEnd: AVAudioPlayer?
 
     func onAppear() {
-        lastShakeTime = Date()
         startShaking()
         if Self.readSoundOpen() {
             prepareSoundEnd()
@@ -104,7 +101,7 @@ final class TimeChallengeSessionViewModel: ObservableObject {
         isShaking = false
         timer?.invalidate()
         timer = nil
-        motionManager.stopDeviceMotionUpdates()
+        shakeDetectionService.stop()
         playSoundEnd()
     }
 
@@ -114,29 +111,15 @@ final class TimeChallengeSessionViewModel: ObservableObject {
 
     private func startShaking() {
         startTime = Date()
+        shakeCount = 0
 
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
             guard let self, let startTime = self.startTime else { return }
             self.elapsedTime = Int(Date().timeIntervalSince(startTime))
         }
 
-        let accel = Self.readAccelerationThreshold()
-        let timeThresh = Self.readTimeThreshold()
-
-        motionManager.startDeviceMotionUpdates(to: OperationQueue.main) { [weak self] motion, _ in
-            guard let self, let motion else { return }
-            let acceleration = motion.userAcceleration
-            let now = Date()
-
-            if (acceleration.z > accel || acceleration.z < -accel)
-                || (acceleration.y > accel || acceleration.y < -accel)
-                || (acceleration.x > accel || acceleration.x < -accel) {
-                if let last = self.lastShakeTime, now.timeIntervalSince(last) < timeThresh {
-                    return
-                }
-                self.shakeCount += 1
-                self.lastShakeTime = now
-            }
+        shakeDetectionService.start(configuration: .load()) { [weak self] event in
+            self?.shakeCount = event.count
         }
     }
 
@@ -144,16 +127,6 @@ final class TimeChallengeSessionViewModel: ObservableObject {
         let m = seconds / 60
         let s = seconds % 60
         return String(format: "%02d:%02d", m, s)
-    }
-
-    private static func readAccelerationThreshold() -> Double {
-        let v = UserDefaults.standard.object(forKey: "accelerationThreshold")
-        return (v as? Double) ?? 0.5
-    }
-
-    private static func readTimeThreshold() -> Double {
-        let v = UserDefaults.standard.object(forKey: "timeThreshold")
-        return (v as? Double) ?? 0.34
     }
 
     private static func readSoundOpen() -> Bool {
@@ -183,10 +156,10 @@ final class FrequencyChallengeSessionViewModel: ObservableObject {
     @Published var shakeCount = 0
     @Published var isShaking = true
 
-    private let motionManager = CMMotionManager()
+    private let shakeDetectionService = ShakeDetectionService()
     private var timer: Timer?
     private var startTime: Date?
-    private var lastShakeTime: Date?
+    private var lastDetectedShakeAt: Date?
     private var vibrateTimer: Timer?
     private var isVibrating = false
     private var audioPlayerEnd: AVAudioPlayer?
@@ -194,7 +167,7 @@ final class FrequencyChallengeSessionViewModel: ObservableObject {
     var vibrateFrequency: Int = 1
 
     func onAppear() {
-        lastShakeTime = Date()
+        lastDetectedShakeAt = Date()
         startShaking()
         startVibration()
         if Self.readSoundOpen() {
@@ -223,28 +196,15 @@ final class FrequencyChallengeSessionViewModel: ObservableObject {
                 self.elapsedTime = Int(Date().timeIntervalSince(startTime))
             }
             let now = Date()
-            if let last = self.lastShakeTime, now.timeIntervalSince(last) > 4.0 {
+            if let lastDetectedShakeAt = self.lastDetectedShakeAt, now.timeIntervalSince(lastDetectedShakeAt) > 4.0 {
                 self.stopShaking()
             }
         }
 
-        let accel = Self.readAccelerationThreshold()
-        let timeThresh = Self.readTimeThreshold()
-
-        motionManager.startDeviceMotionUpdates(to: OperationQueue.main) { [weak self] motion, _ in
-            guard let self, let motion else { return }
-            let acceleration = motion.userAcceleration
-            let now = Date()
-
-            if (acceleration.z > accel || acceleration.z < -accel)
-                || (acceleration.y > accel || acceleration.y < -accel)
-                || (acceleration.x > accel || acceleration.x < -accel) {
-                if let last = self.lastShakeTime, now.timeIntervalSince(last) < timeThresh {
-                    return
-                }
-                self.shakeCount += 1
-                self.lastShakeTime = now
-            }
+        shakeDetectionService.start(configuration: .load()) { [weak self] event in
+            guard let self else { return }
+            self.shakeCount = event.count
+            self.lastDetectedShakeAt = event.timestamp
         }
     }
 
@@ -253,7 +213,7 @@ final class FrequencyChallengeSessionViewModel: ObservableObject {
         isShaking = false
         timer?.invalidate()
         timer = nil
-        motionManager.stopDeviceMotionUpdates()
+        shakeDetectionService.stop()
         playSoundEnd()
     }
 
@@ -276,16 +236,6 @@ final class FrequencyChallengeSessionViewModel: ObservableObject {
         let m = seconds / 60
         let s = seconds % 60
         return String(format: "%02d:%02d", m, s)
-    }
-
-    private static func readAccelerationThreshold() -> Double {
-        let v = UserDefaults.standard.object(forKey: "accelerationThreshold")
-        return (v as? Double) ?? 0.5
-    }
-
-    private static func readTimeThreshold() -> Double {
-        let v = UserDefaults.standard.object(forKey: "timeThreshold")
-        return (v as? Double) ?? 0.34
     }
 
     private static func readSoundOpen() -> Bool {
@@ -319,8 +269,7 @@ final class EdgeChallengeSessionViewModel: ObservableObject {
     @Published var shakeCount = 0
 
     private var timer: Timer?
-    private let motionManager = CMMotionManager()
-    private var lastShakeTime: Date?
+    private let shakeDetectionService = ShakeDetectionService()
     private var lastShakeCount = 0
     private var noMilkingTime = 0
     private var audioPlayerEnd: AVAudioPlayer?
@@ -366,11 +315,15 @@ final class EdgeChallengeSessionViewModel: ObservableObject {
             lastShakeCount = shakeCount
         }
         isMilking.toggle()
+        if isMilking {
+            shakeDetectionService.resetCycle()
+        }
     }
 
     private func stopMilking() {
         timer?.invalidate()
         timer = nil
+        shakeDetectionService.stop()
         milkingCompleted = true
     }
 
@@ -388,36 +341,15 @@ final class EdgeChallengeSessionViewModel: ObservableObject {
     }
 
     private func startMonitorShake() {
-        let accel = Self.readAccelerationThreshold()
-        let timeThresh = Self.readTimeThreshold()
-
-        motionManager.startDeviceMotionUpdates(to: OperationQueue.main) { [weak self] motion, _ in
-            guard let self, let motion else { return }
-            let acceleration = motion.userAcceleration
-            let now = Date()
-
-            if (acceleration.z > accel || acceleration.z < -accel)
-                || (acceleration.y > accel || acceleration.y < -accel)
-                || (acceleration.x > accel || acceleration.x < -accel) {
-                if let last = self.lastShakeTime, now.timeIntervalSince(last) < timeThresh {
-                    return
-                }
-                if self.isMilking {
-                    self.shakeCount += 1
-                }
-                self.lastShakeTime = now
+        shakeDetectionService.start(
+            configuration: .load(),
+            shouldCountShake: { [weak self] in
+                self?.isMilking ?? false
+            },
+            onShake: { [weak self] event in
+                self?.shakeCount = event.count
             }
-        }
-    }
-
-    private static func readAccelerationThreshold() -> Double {
-        let v = UserDefaults.standard.object(forKey: "accelerationThreshold")
-        return (v as? Double) ?? 0.5
-    }
-
-    private static func readTimeThreshold() -> Double {
-        let v = UserDefaults.standard.object(forKey: "timeThreshold")
-        return (v as? Double) ?? 0.34
+        )
     }
 
     private static func readSoundOpen() -> Bool {

@@ -12,6 +12,7 @@
 		A1F2E3D02EC0100100000003 /* GoodNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000003 /* GoodNewsViewModel.swift */; };
 		A1F2E3D02EC0100100000004 /* ChallengeViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000004 /* ChallengeViewModels.swift */; };
 		A1F2E3D02EC0100100000005 /* SettingViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000005 /* SettingViewModels.swift */; };
+		A1F2E3D02EC0100100000006 /* ShakeDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000006 /* ShakeDetectionService.swift */; };
 		50201AFB2C70ECCD009E01C7 /* HeartRateMeasurementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFA2C70ECCD009E01C7 /* HeartRateMeasurementService.swift */; };
 		50201AFE2C71A3E5009E01C7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFD2C71A3E5009E01C7 /* DataService.swift */; };
 		50201B002C71BB04009E01C7 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFF2C71BB04009E01C7 /* RecordView.swift */; };
@@ -70,6 +71,7 @@
 		A1F2E3D12EC0100100000003 /* GoodNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNewsViewModel.swift; sourceTree = "<group>"; };
 		A1F2E3D12EC0100100000004 /* ChallengeViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModels.swift; sourceTree = "<group>"; };
 		A1F2E3D12EC0100100000005 /* SettingViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModels.swift; sourceTree = "<group>"; };
+		A1F2E3D12EC0100100000006 /* ShakeDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetectionService.swift; sourceTree = "<group>"; };
 		50201AFA2C70ECCD009E01C7 /* HeartRateMeasurementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateMeasurementService.swift; sourceTree = "<group>"; };
 		50201AFD2C71A3E5009E01C7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		50201AFF2C71BB04009E01C7 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				50201AFA2C70ECCD009E01C7 /* HeartRateMeasurementService.swift */,
 				50201AFD2C71A3E5009E01C7 /* DataService.swift */,
 				5083BD4E2C7C70DF008D7493 /* JSONService.swift */,
+				A1F2E3D12EC0100100000006 /* ShakeDetectionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				50AF8C902C69F3DC004A421C /* PlayView.swift in Sources */,
 				50201B002C71BB04009E01C7 /* RecordView.swift in Sources */,
 				50201AFB2C70ECCD009E01C7 /* HeartRateMeasurementService.swift in Sources */,
+				A1F2E3D02EC0100100000006 /* ShakeDetectionService.swift in Sources */,
 				5098F2B32C74B93B00C94576 /* RecordView_InfoCard.swift in Sources */,
 				50897C7E2C9F0F330094DA13 /* SettingView_AccelerationThresholdSetting.swift in Sources */,
 				50AF8C572C69E038004A421C /* ContentView.swift in Sources */,

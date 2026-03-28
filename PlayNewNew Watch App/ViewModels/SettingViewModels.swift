@@ -3,7 +3,7 @@
 //  PlayNewNew Watch App
 //
 
-import CoreMotion
+import Foundation
 
 final class SettingViewModel: ObservableObject {
     @Published var showAlert = false
@@ -29,23 +29,16 @@ final class AccelerationThresholdSettingViewModel: ObservableObject {
     @Published var x = 0.0
     @Published var y = 0.0
     @Published var z = 0.0
+    @Published var dominantAxisText = "-"
+    @Published var filteredMagnitude = 0.0
+    @Published var signedProjection = 0.0
+    @Published var directionConfidence = 0.0
+    @Published var detectorState = "等待峰值"
 
-    private let motionManager = CMMotionManager()
-    private var lastShakeTime: Date?
-
-    private static func readAccelerationThreshold() -> Double {
-        let v = UserDefaults.standard.object(forKey: "accelerationThreshold")
-        return (v as? Double) ?? 0.5
-    }
-
-    private static func readTimeThreshold() -> Double {
-        let v = UserDefaults.standard.object(forKey: "timeThreshold")
-        return (v as? Double) ?? 0.34
-    }
+    private let shakeDetectionService = ShakeDetectionService()
 
     func resetToDefaults() {
-        UserDefaults.standard.set(0.5, forKey: "accelerationThreshold")
-        UserDefaults.standard.set(0.34, forKey: "timeThreshold")
+        ShakeDetectionConfiguration.reset()
     }
 
     func toggleTest() {
@@ -62,34 +55,35 @@ final class AccelerationThresholdSettingViewModel: ObservableObject {
 
     private func startMotion() {
         isStart = true
-        motionManager.startDeviceMotionUpdates(to: OperationQueue.main) { [weak self] motion, _ in
-            guard let self, let motion else { return }
-            let acceleration = motion.userAcceleration
-            let threshold = Self.readAccelerationThreshold()
-            let now = Date()
-            let timeThresh = Self.readTimeThreshold()
+        shakeCount = 0
+        shakeDetectionService.start(
+            configuration: .load(),
+            onShake: { [weak self] event in
+                self?.shakeCount = event.count
+            },
+            onDebug: { [weak self] snapshot in
+                guard let self else { return }
 
-            self.x = acceleration.x
-            self.y = acceleration.y
-            self.z = acceleration.z
-
-            if (acceleration.z > threshold || acceleration.z < -threshold)
-                || (acceleration.y > threshold || acceleration.y < -threshold)
-                || (acceleration.x > threshold || acceleration.x < -threshold) {
-                if let last = self.lastShakeTime, now.timeIntervalSince(last) < timeThresh {
-                    return
-                }
-                if self.isStart {
-                    self.shakeCount += 1
-                }
-                self.lastShakeTime = now
+                self.x = snapshot.rawX
+                self.y = snapshot.rawY
+                self.z = snapshot.rawZ
+                self.filteredMagnitude = snapshot.filteredMagnitude
+                self.signedProjection = snapshot.signedProjection
+                self.directionConfidence = snapshot.directionConfidence
+                self.detectorState = snapshot.stateDescription
+                self.dominantAxisText = String(
+                    format: "(%.2f, %.2f, %.2f)",
+                    snapshot.dominantAxisX,
+                    snapshot.dominantAxisY,
+                    snapshot.dominantAxisZ
+                )
             }
-        }
+        )
     }
 
     private func stopMotion() {
         isStart = false
         shakeCount = 0
-        motionManager.stopDeviceMotionUpdates()
+        shakeDetectionService.stop()
     }
 }
