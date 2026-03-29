@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1F2E3D02EC0100100000001 /* PlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000001 /* PlayViewModel.swift */; };
-		A1F2E3D02EC0100100000002 /* RecordReportViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000002 /* RecordReportViewModels.swift */; };
-		A1F2E3D02EC0100100000003 /* GoodNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000003 /* GoodNewsViewModel.swift */; };
-		A1F2E3D02EC0100100000004 /* ChallengeViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000004 /* ChallengeViewModels.swift */; };
-		A1F2E3D02EC0100100000005 /* SettingViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000005 /* SettingViewModels.swift */; };
-		A1F2E3D02EC0100100000006 /* ShakeDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000006 /* ShakeDetectionService.swift */; };
 		50201AFB2C70ECCD009E01C7 /* HeartRateMeasurementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFA2C70ECCD009E01C7 /* HeartRateMeasurementService.swift */; };
 		50201AFE2C71A3E5009E01C7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFD2C71A3E5009E01C7 /* DataService.swift */; };
 		50201B002C71BB04009E01C7 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50201AFF2C71BB04009E01C7 /* RecordView.swift */; };
@@ -39,6 +33,12 @@
 		50B4C9DC2C9A87B6001F7BD0 /* GoodNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B4C9DB2C9A87B6001F7BD0 /* GoodNewsView.swift */; };
 		50D295A72C8E80AF0007CA4F /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D295A62C8E80AF0007CA4F /* ChallengeView.swift */; };
 		50D295AA2C8E82070007CA4F /* FrequencyChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D295A92C8E82070007CA4F /* FrequencyChallengeView.swift */; };
+		A1F2E3D02EC0100100000001 /* PlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000001 /* PlayViewModel.swift */; };
+		A1F2E3D02EC0100100000002 /* RecordReportViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000002 /* RecordReportViewModels.swift */; };
+		A1F2E3D02EC0100100000003 /* GoodNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000003 /* GoodNewsViewModel.swift */; };
+		A1F2E3D02EC0100100000004 /* ChallengeViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000004 /* ChallengeViewModels.swift */; };
+		A1F2E3D02EC0100100000005 /* SettingViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000005 /* SettingViewModels.swift */; };
+		A1F2E3D02EC0100100000006 /* ShakeDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12EC0100100000006 /* ShakeDetectionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,12 +66,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A1F2E3D12EC0100100000001 /* PlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewModel.swift; sourceTree = "<group>"; };
-		A1F2E3D12EC0100100000002 /* RecordReportViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordReportViewModels.swift; sourceTree = "<group>"; };
-		A1F2E3D12EC0100100000003 /* GoodNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNewsViewModel.swift; sourceTree = "<group>"; };
-		A1F2E3D12EC0100100000004 /* ChallengeViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModels.swift; sourceTree = "<group>"; };
-		A1F2E3D12EC0100100000005 /* SettingViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModels.swift; sourceTree = "<group>"; };
-		A1F2E3D12EC0100100000006 /* ShakeDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetectionService.swift; sourceTree = "<group>"; };
 		50201AFA2C70ECCD009E01C7 /* HeartRateMeasurementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateMeasurementService.swift; sourceTree = "<group>"; };
 		50201AFD2C71A3E5009E01C7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		50201AFF2C71BB04009E01C7 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -98,9 +92,13 @@
 		50B4C9DB2C9A87B6001F7BD0 /* GoodNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNewsView.swift; sourceTree = "<group>"; };
 		50D295A62C8E80AF0007CA4F /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
 		50D295A92C8E82070007CA4F /* FrequencyChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyChallengeView.swift; sourceTree = "<group>"; };
+		A1F2E3D12EC0100100000001 /* PlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewModel.swift; sourceTree = "<group>"; };
+		A1F2E3D12EC0100100000002 /* RecordReportViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordReportViewModels.swift; sourceTree = "<group>"; };
+		A1F2E3D12EC0100100000003 /* GoodNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNewsViewModel.swift; sourceTree = "<group>"; };
+		A1F2E3D12EC0100100000004 /* ChallengeViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModels.swift; sourceTree = "<group>"; };
+		A1F2E3D12EC0100100000005 /* SettingViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModels.swift; sourceTree = "<group>"; };
+		A1F2E3D12EC0100100000006 /* ShakeDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetectionService.swift; sourceTree = "<group>"; };
 		B8128A712DECC1E000A45E4C /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		B870817A2DECC0A900E25656 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
-		B870817B2DECC0A900E25656 /* image-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-1.png"; sourceTree = "<group>"; };
 		B870817C2DECC0A900E25656 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,8 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				B8128A712DECC1E000A45E4C /* LICENSE.txt */,
-				B870817A2DECC0A900E25656 /* image.png */,
-				B870817B2DECC0A900E25656 /* image-1.png */,
 				B870817C2DECC0A900E25656 /* README.md */,
 				50AF8C532C69E038004A421C /* PlayNewNew Watch App */,
 				50AF8C4A2C69E037004A421C /* Products */,
@@ -161,18 +157,6 @@
 				50AF8C4F2C69E038004A421C /* PlayNewNew Watch App.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A1F2E3D22EC0100100000000 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				A1F2E3D12EC0100100000001 /* PlayViewModel.swift */,
-				A1F2E3D12EC0100100000002 /* RecordReportViewModels.swift */,
-				A1F2E3D12EC0100100000003 /* GoodNewsViewModel.swift */,
-				A1F2E3D12EC0100100000004 /* ChallengeViewModels.swift */,
-				A1F2E3D12EC0100100000005 /* SettingViewModels.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		50AF8C532C69E038004A421C /* PlayNewNew Watch App */ = {
@@ -251,6 +235,18 @@
 				5045691E2C6FC06700D30BF3 /* start.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		A1F2E3D22EC0100100000000 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2E3D12EC0100100000001 /* PlayViewModel.swift */,
+				A1F2E3D12EC0100100000002 /* RecordReportViewModels.swift */,
+				A1F2E3D12EC0100100000003 /* GoodNewsViewModel.swift */,
+				A1F2E3D12EC0100100000004 /* ChallengeViewModels.swift */,
+				A1F2E3D12EC0100100000005 /* SettingViewModels.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
